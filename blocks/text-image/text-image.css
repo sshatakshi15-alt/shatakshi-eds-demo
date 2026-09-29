@@ -1,0 +1,32 @@
+.text-image {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 24px;
+  align-items: center;
+  margin: 40px 0;
+}
+
+@media (width >= 900px) {
+  .text-image {
+    grid-template-columns: 1fr 1fr;
+    gap: 48px;
+  }
+}
+
+.text-image-content h2 {
+  margin-top: 0;
+}
+
+.text-image-media img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  display: block;
+}
+
+.text-image.dark-theme {
+  background: var(--dark-color);
+  color: var(--background-color);
+  padding: 32px;
+  border-radius: 8px;
+}
