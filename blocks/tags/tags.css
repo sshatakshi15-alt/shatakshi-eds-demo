@@ -1,0 +1,43 @@
+.tags {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin: 32px 0;
+}
+
+.tags-group {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.tags-group-header {
+  font-weight: 700;
+  font-size: var(--body-font-size-s);
+  color: var(--dark-color);
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+}
+
+.tags-group-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.tags-tag {
+  display: inline-flex;
+  align-items: center;
+  padding: 6px 14px;
+  border-radius: 999px;
+  background-color: var(--light-color);
+  color: var(--text-color);
+  font-size: var(--body-font-size-s);
+  white-space: nowrap;
+}
+
+@media (width >= 900px) {
+  .tags {
+    max-width: 260px;
+  }
+}
